@@ -224,3 +224,5 @@ __marimo__/
 
 # Browser test dependencies
 tests/ui/node_modules/
+landing/public/
+landing/.vercel/

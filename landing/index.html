@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="SCOP is building an AI development ecosystem focused on verifiable results. Join early access and help shape what comes next.">
+  <meta name="signup-token" content="__TOKEN__">
+  <title>SCOP — Build toward verifiable results</title>
+  <link rel="preload" href="/assets/hero.webp" as="image" type="image/webp">
+  <link rel="stylesheet" href="/style.css">
+  <script src="/app.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="nav wrap">
+    <a class="brand" href="#" aria-label="SCOP home"><span class="brand-mark" aria-hidden="true"></span>SCOP<span class="brand-dot" aria-hidden="true">.</span></a>
+    <nav aria-label="Main navigation">
+      <a href="#explore">The vision</a>
+      <a href="#early-access" class="nav-cta">Join Early Access <span aria-hidden="true">→</span></a>
+    </nav>
+  </header>
+  <main id="main" tabindex="-1">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-art" aria-hidden="true"></div>
+      <div class="hero-depth" aria-hidden="true"></div>
+      <div class="wrap hero-content">
+        <p class="eyebrow"><span class="signal" aria-hidden="true"></span>Early Development · Looking for Beta Testers</p>
+        <h1 id="hero-title">One ecosystem.<br>Multiple capabilities.<br><span>One essential<br class="desktop-break"> purpose.</span></h1>
+        <p class="hero-description">We're building an AI development ecosystem that brings agents, skills, commands, and workflows together — focused on helping developers achieve verifiable results.</p>
+        <div class="actions">
+          <a class="button primary" href="#early-access">Join Early Access <span aria-hidden="true">→</span></a>
+          <a class="button secondary" href="#explore">Explore SCOP <span aria-hidden="true">↓</span></a>
+        </div>
+        <p class="hero-note">Built with developers. Shaped by real problems.</p>
+      </div>
+      <div class="hero-bottom wrap"><span>AI DEVELOPMENT, WITH INTENTION</span><a href="#explore" aria-label="Explore the SCOP vision">Scroll to explore <span aria-hidden="true">↓</span></a></div>
+    </section>
+    <section id="explore" class="explore wrap" aria-labelledby="vision-title">
+      <div class="section-heading"><p class="eyebrow">THE DIRECTION</p><h2 id="vision-title">Bring the pieces together.<br><span>Make the result matter.</span></h2></div>
+      <div class="vision-copy"><p>AI development involves a growing set of tools. We're exploring how agents, skills, commands, MCP integrations, and workflows could work together around outcomes developers can review.</p><p>The problems worth solving are still being researched. Your experience will help us decide what to build next.</p></div>
+      <div class="capabilities" aria-label="Planned ecosystem capabilities"><span>Agents</span><span>Skills</span><span>Commands</span><span>MCP</span><span>Workflows</span></div>
+      <p class="caption">Planned ecosystem direction. These capabilities are at different stages of development.</p>
+      <article class="current"><div><p class="eyebrow">WHERE WE ARE TODAY</p><h3>A first workflow.<br>Something you can inspect.</h3></div><div><p>The current local MVP analyzes public GitHub pull requests and returns a summary with traceable source excerpts. Developers review the evidence and can record their evaluation.</p><a class="text-link" href="https://github.com/sovereis/SCOP" target="_blank" rel="noopener noreferrer">Explore the repository <span aria-hidden="true">→</span><span class="sr-only"> (opens in a new tab)</span></a></div></article>
+    </section>
+    <section id="early-access" class="signup-section" aria-labelledby="signup-title">
+      <div class="wrap signup-grid"><div class="signup-copy"><p class="eyebrow">HELP SHAPE SCOP</p><h2 id="signup-title">Your friction.<br>Our next question.</h2><p>Tell us where AI-assisted development gets difficult. Join the early access list to hear about beta opportunities and share your experience.</p><p class="caption">Early access is an expression of interest. Beta availability is still being planned.</p></div>
+      <form id="signup-form" novalidate data-available="__AVAILABLE__">
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" autocomplete="email" maxlength="254" placeholder="you@example.com" required aria-describedby="email-error">
+        <p class="field-error" id="email-error"></p>
+        <label for="tool">Which AI coding tool do you use?</label>
+        <input id="tool" name="tool" type="text" maxlength="120" placeholder="e.g. Codex, Claude Code, Cursor" required aria-describedby="tool-error">
+        <p class="field-error" id="tool-error"></p>
+        <label for="problem">What's your biggest challenge when developing with AI?</label>
+        <textarea id="problem" name="problem" maxlength="2000" rows="4" placeholder="What slows you down or makes it hard to trust the result?" required aria-describedby="problem-error"></textarea>
+        <p class="field-error" id="problem-error"></p>
+        <label class="consent"><input id="consent" name="consent" type="checkbox" required aria-describedby="consent-error"><span>I agree that SCOP may store my answers and contact me about beta access and product research.</span></label>
+        <p class="field-error" id="consent-error"></p>
+        <p class="privacy">We collect these answers to understand developer needs. Please leave credentials, private code, and sensitive personal information out of your response. <a href="#privacy-details">How your data is used</a></p>
+        <button class="button primary" id="submit" type="submit" disabled>Join Early Access <span aria-hidden="true">→</span></button>
+        <p id="form-status" role="status" aria-live="polite">Checking signup availability…</p>
+      </form></div>
+    </section>
+    <section class="wrap privacy-details" id="privacy-details"><h2>Your information</h2><p>Your email, tool, challenge, consent and submission time are stored in the configured private signup storage. They are used to plan beta invitations and product research. This preview has no analytics or automatic email delivery. The operator can delete a submission from that storage. Before public launch, SCOP must publish its contact details, deletion process and retention period.</p></section>
+  </main>
+  <footer class="wrap"><a class="brand" href="#">SCOP<span class="brand-dot" aria-hidden="true">.</span></a><p>An ecosystem in the making.</p><a href="https://github.com/sovereis/SCOP" target="_blank" rel="noopener noreferrer">GitHub <span class="sr-only">(opens in a new tab)</span> →</a></footer>
+</body>
+</html>

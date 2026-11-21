@@ -27,5 +27,5 @@ jobs:
         run: |
           npm ci --ignore-scripts --prefix tests/ui
           tests/ui/node_modules/.bin/playwright install --with-deps chromium
-      - name: Run Workspace browser tests (offline evidence fixtures)
-        run: node --test tests/ui/workspace.test.cjs
+      - name: Run Workspace and landing browser tests
+        run: node --test tests/ui/*.test.cjs

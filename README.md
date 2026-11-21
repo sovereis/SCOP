@@ -38,3 +38,7 @@ Recording and feedback each require explicit consent in the browser. Leave unkno
 - **GitHub unavailable:** check connectivity from Linux or WSL, confirm the PR is public, and retry after rate limits reset if applicable. Missing patch evidence can also block a review.
 
 See the [web architecture and developer tests](server/WEB.md).
+
+## Public landing on Vercel
+
+Deploy only the `landing` root directory using its [Vercel setup guide](landing/README.md#deploy-to-vercel-after-approval). The production signup API requires configured Supabase storage and server-only environment variables. Git-triggered deployments are disabled in the configuration. The Workspace continues to run locally through the commands above.
